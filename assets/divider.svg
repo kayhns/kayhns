@@ -1,0 +1,47 @@
+<svg width="1280" height="54" viewBox="0 0 1280 54" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Separador decorativo">
+  <defs>
+    <linearGradient id="dLine" x1="120" y1="27" x2="1160" y2="27" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6" stop-opacity="0"/>
+      <stop offset="0.22" stop-color="#8B5CF6"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="0.78" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- base rules -->
+  <path d="M150 27H560" stroke="url(#dLine)" stroke-width="1.4"/>
+  <path d="M720 27H1130" stroke="url(#dLine)" stroke-width="1.4"/>
+
+  <!-- small accent nodes along the rules -->
+  <g fill="#38BDF8">
+    <circle cx="470" cy="27" r="1.8"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="810" cy="27" r="1.8"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- travelling light pulse -->
+  <circle r="2.6" fill="#E0F2FE" filter="url(#dGlow)">
+    <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+    <animateMotion path="M150 27H560" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.6" fill="#E0F2FE" filter="url(#dGlow)">
+    <animate attributeName="opacity" values="0;1;0" dur="6s" begin="3s" repeatCount="indefinite"/>
+    <animateMotion path="M1130 27H720" dur="6s" begin="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- central ornament -->
+  <g transform="translate(640 27)" filter="url(#dGlow)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+      <polygon points="0,-14 14,0 0,14 -14,0" fill="none" stroke="#F6DB8B" stroke-width="1" opacity="0.7"/>
+    </g>
+    <polygon points="0,-9 9,0 0,9 -9,0" fill="#0F172A" stroke="#F6DB8B" stroke-width="1.1"/>
+    <circle r="2.6" fill="#38BDF8">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

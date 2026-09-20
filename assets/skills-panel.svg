@@ -1,0 +1,201 @@
+<svg width="1280" height="962" viewBox="0 0 1280 962" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sTitle sDesc">
+  <title id="sTitle">Visão geral de competências de Kayky Silva</title>
+  <desc id="sDesc">Painel com ferramentas de Estatística, dados, programação, documentação e cloud, com barras qualitativas de familiaridade.</desc>
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#070C18"/><stop offset="0.52" stop-color="#10162A"/><stop offset="1" stop-color="#090F1E"/>
+    </linearGradient>
+    <linearGradient id="sPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#141D33"/><stop offset="1" stop-color="#0B1123"/>
+    </linearGradient>
+    <linearGradient id="sBorder" x1="0" y1="0" x2="1280" y2="912" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6DB8B"/><stop offset="0.4" stop-color="#8B5CF6"/><stop offset="0.75" stop-color="#38BDF8"/><stop offset="1" stop-color="#2DD4BF"/>
+      <animate attributeName="x1" values="0;400;0" dur="14s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#F4C95D"/><stop offset="0.5" stop-color="#C88A4A"/><stop offset="1" stop-color="#9B55C8"/>
+    </linearGradient>
+    <linearGradient id="barAqua" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#54D6D0"/><stop offset="1" stop-color="#4E8BDE"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.06"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="sGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#6B7AA0" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="962" rx="28" fill="url(#sBg)"/>
+  <rect x="18" y="18" width="1244" height="926" rx="24" fill="url(#sGrid)" stroke="url(#sBorder)" stroke-width="2"/>
+  <rect x="31" y="31" width="1218" height="900" rx="19" fill="none" stroke="#6A7897" stroke-opacity="0.45"/>
+  <rect x="52" y="50" width="1176" height="862" rx="18" fill="url(#sPanel)" stroke="#E0BD67" stroke-width="1.4"/>
+
+  <!-- ornamented corners -->
+  <g fill="#E0BD67">
+    <path d="M52 88V50H90L79 61H63V77Z"/>
+    <path d="M1190 50H1228V88L1217 77V61H1201Z"/>
+    <path d="M52 874V912H90L79 901H63V885Z"/>
+    <path d="M1190 912H1228V874L1217 885V901H1201Z"/>
+  </g>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif">
+    <!-- header -->
+    <text x="88" y="100" fill="#F4C95D" font-size="12" font-weight="700" letter-spacing="3">VISÃO GERAL</text>
+    <text x="88" y="140" fill="#F8FAFC" font-size="30" font-weight="700">Visão geral de competências</text>
+    <text x="88" y="167" fill="#9EABC4" font-size="14">Familiaridade com ferramentas de Estatística, dados, programação e documentação</text>
+    <text x="1192" y="167" text-anchor="end" fill="#6E7C97" font-size="12" font-style="italic">As barras indicam familiaridade, não certificação</text>
+
+    <!-- section labels -->
+    <path d="M88 200H1192" stroke="#3A465F"/>
+    <path d="M88 200H420" stroke="#D9B765" stroke-width="2"/>
+    <circle cx="88" cy="200" r="4" fill="#D9B765" filter="url(#sGlow)"/>
+    <circle cx="660" cy="200" r="4" fill="#54D6D0" filter="url(#sGlow)"/>
+    <text x="102" y="234" fill="#F4C95D" font-size="16" font-weight="700" letter-spacing="0.6">Dados e Estatística</text>
+    <text x="674" y="234" fill="#63D7D0" font-size="16" font-weight="700" letter-spacing="0.6">Programação, Documentação e Cloud</text>
+
+    <!-- ================= LEFT COLUMN ================= -->
+    <!-- R -->
+    <g>
+      <rect x="82" y="262" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="262" width="5" height="90" rx="2.5" fill="#D9B765"/>
+      <text x="110" y="294" fill="#F8FAFC" font-size="19" font-weight="700">R</text>
+      <text x="110" y="318" fill="#AAB6CC" font-size="13">Análise estatística, exploração e visualização de dados</text>
+      <rect x="110" y="332" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="110" y="332" width="0" height="10" rx="5" fill="url(#barGold)"><animate attributeName="width" from="0" to="264" dur="1.5s" begin="0.2s" fill="freeze"/></rect>
+      <circle cy="337" cx="110" r="5" fill="#FDE68A" filter="url(#sGlow)"><animate attributeName="cx" from="110" to="374" dur="1.5s" begin="0.2s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.4s" repeatCount="indefinite"/></circle>
+      <text x="578" y="341" text-anchor="end" fill="#D9B765" font-size="12" font-weight="700">Base sólida</text>
+    </g>
+    <!-- Python -->
+    <g>
+      <rect x="82" y="365" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="365" width="5" height="90" rx="2.5" fill="#D9B765"/>
+      <text x="110" y="397" fill="#F8FAFC" font-size="19" font-weight="700">Python</text>
+      <text x="110" y="421" fill="#AAB6CC" font-size="13">Programação, análise de dados e automação</text>
+      <rect x="110" y="435" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="110" y="435" width="0" height="10" rx="5" fill="url(#barGold)"><animate attributeName="width" from="0" to="198" dur="1.5s" begin="0.35s" fill="freeze"/></rect>
+      <circle cy="440" cx="110" r="5" fill="#FDE68A" filter="url(#sGlow)"><animate attributeName="cx" from="110" to="308" dur="1.5s" begin="0.35s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/></circle>
+      <text x="578" y="444" text-anchor="end" fill="#C9A2E2" font-size="12" font-weight="700">Em evolução</text>
+    </g>
+    <!-- SQL -->
+    <g>
+      <rect x="82" y="468" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="468" width="5" height="90" rx="2.5" fill="#D9B765"/>
+      <text x="110" y="500" fill="#F8FAFC" font-size="19" font-weight="700">SQL</text>
+      <text x="110" y="524" fill="#AAB6CC" font-size="13">Consultas e manipulação básica de dados</text>
+      <rect x="110" y="538" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="110" y="538" width="0" height="10" rx="5" fill="url(#barGold)"><animate attributeName="width" from="0" to="125" dur="1.5s" begin="0.5s" fill="freeze"/></rect>
+      <circle cy="543" cx="110" r="5" fill="#FDE68A" filter="url(#sGlow)"><animate attributeName="cx" from="110" to="235" dur="1.5s" begin="0.5s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/></circle>
+      <text x="578" y="547" text-anchor="end" fill="#93B8DF" font-size="12" font-weight="700">Básico</text>
+    </g>
+    <!-- Excel -->
+    <g>
+      <rect x="82" y="571" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="571" width="5" height="90" rx="2.5" fill="#D9B765"/>
+      <text x="110" y="603" fill="#F8FAFC" font-size="19" font-weight="700">Excel</text>
+      <text x="110" y="627" fill="#AAB6CC" font-size="13">Fórmulas, tabelas dinâmicas, gráficos e análise de dados</text>
+      <rect x="110" y="641" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="110" y="641" width="0" height="10" rx="5" fill="url(#barGold)"><animate attributeName="width" from="0" to="297" dur="1.5s" begin="0.65s" fill="freeze"/></rect>
+      <circle cy="646" cx="110" r="5" fill="#FDE68A" filter="url(#sGlow)"><animate attributeName="cx" from="110" to="407" dur="1.5s" begin="0.65s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/></circle>
+      <text x="578" y="650" text-anchor="end" fill="#D9B765" font-size="12" font-weight="700">Avançado</text>
+    </g>
+    <!-- SPSS -->
+    <g>
+      <rect x="82" y="674" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="674" width="5" height="90" rx="2.5" fill="#D9B765"/>
+      <text x="110" y="706" fill="#F8FAFC" font-size="19" font-weight="700">SPSS</text>
+      <text x="110" y="730" fill="#AAB6CC" font-size="13">Conhecimentos básicos adquiridos durante a graduação</text>
+      <rect x="110" y="744" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="110" y="744" width="0" height="10" rx="5" fill="url(#barGold)"><animate attributeName="width" from="0" to="109" dur="1.5s" begin="0.8s" fill="freeze"/></rect>
+      <circle cy="749" cx="110" r="5" fill="#FDE68A" filter="url(#sGlow)"><animate attributeName="cx" from="110" to="219" dur="1.5s" begin="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.7s" repeatCount="indefinite"/></circle>
+      <text x="578" y="753" text-anchor="end" fill="#93B8DF" font-size="12" font-weight="700">Básico</text>
+    </g>
+    <!-- Minitab -->
+    <g>
+      <rect x="82" y="777" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="777" width="5" height="90" rx="2.5" fill="#D9B765"/>
+      <text x="110" y="809" fill="#F8FAFC" font-size="19" font-weight="700">Minitab</text>
+      <text x="110" y="833" fill="#AAB6CC" font-size="13">Conhecimentos básicos adquiridos durante a graduação</text>
+      <rect x="110" y="847" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="110" y="847" width="0" height="10" rx="5" fill="url(#barGold)"><animate attributeName="width" from="0" to="99" dur="1.5s" begin="0.95s" fill="freeze"/></rect>
+      <circle cy="852" cx="110" r="5" fill="#FDE68A" filter="url(#sGlow)"><animate attributeName="cx" from="110" to="209" dur="1.5s" begin="0.95s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.9s" repeatCount="indefinite"/></circle>
+      <text x="578" y="856" text-anchor="end" fill="#93B8DF" font-size="12" font-weight="700">Básico</text>
+    </g>
+
+    <!-- ================= RIGHT COLUMN ================= -->
+    <!-- C++ -->
+    <g>
+      <rect x="658" y="262" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="658" y="262" width="5" height="90" rx="2.5" fill="#54D6D0"/>
+      <text x="686" y="294" fill="#F8FAFC" font-size="19" font-weight="700">C++</text>
+      <text x="686" y="318" fill="#AAB6CC" font-size="13">Fundamentos de programação em desenvolvimento</text>
+      <rect x="686" y="332" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="686" y="332" width="0" height="10" rx="5" fill="url(#barAqua)"><animate attributeName="width" from="0" to="92" dur="1.5s" begin="0.4s" fill="freeze"/></rect>
+      <circle cy="337" cx="686" r="5" fill="#A5F3EF" filter="url(#sGlow)"><animate attributeName="cx" from="686" to="778" dur="1.5s" begin="0.4s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/></circle>
+      <text x="1154" y="341" text-anchor="end" fill="#93D8D4" font-size="12" font-weight="700">Início</text>
+    </g>
+    <!-- HTML / CSS -->
+    <g>
+      <rect x="658" y="365" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="658" y="365" width="5" height="90" rx="2.5" fill="#54D6D0"/>
+      <text x="686" y="397" fill="#F8FAFC" font-size="19" font-weight="700">HTML / CSS</text>
+      <text x="686" y="421" fill="#AAB6CC" font-size="13">Leitura e edição de código existente em nível básico</text>
+      <rect x="686" y="435" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="686" y="435" width="0" height="10" rx="5" fill="url(#barAqua)"><animate attributeName="width" from="0" to="82" dur="1.5s" begin="0.55s" fill="freeze"/></rect>
+      <circle cy="440" cx="686" r="5" fill="#A5F3EF" filter="url(#sGlow)"><animate attributeName="cx" from="686" to="768" dur="1.5s" begin="0.55s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/></circle>
+      <text x="1154" y="444" text-anchor="end" fill="#93D8D4" font-size="12" font-weight="700">Básico</text>
+    </g>
+    <!-- JavaScript / JSON -->
+    <g>
+      <rect x="658" y="468" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="658" y="468" width="5" height="90" rx="2.5" fill="#54D6D0"/>
+      <text x="686" y="500" fill="#F8FAFC" font-size="19" font-weight="700">JavaScript / JSON</text>
+      <text x="686" y="524" fill="#AAB6CC" font-size="13">Leitura, compreensão e edição de estruturas existentes</text>
+      <rect x="686" y="538" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="686" y="538" width="0" height="10" rx="5" fill="url(#barAqua)"><animate attributeName="width" from="0" to="79" dur="1.5s" begin="0.7s" fill="freeze"/></rect>
+      <circle cy="543" cx="686" r="5" fill="#A5F3EF" filter="url(#sGlow)"><animate attributeName="cx" from="686" to="765" dur="1.5s" begin="0.7s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/></circle>
+      <text x="1154" y="547" text-anchor="end" fill="#93D8D4" font-size="12" font-weight="700">Básico</text>
+    </g>
+    <!-- Quarto / Markdown -->
+    <g>
+      <rect x="658" y="571" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="658" y="571" width="5" height="90" rx="2.5" fill="#54D6D0"/>
+      <text x="686" y="603" fill="#F8FAFC" font-size="19" font-weight="700">Quarto / Markdown</text>
+      <text x="686" y="627" fill="#AAB6CC" font-size="13">Relatórios, documentação técnica e projetos reproduzíveis</text>
+      <rect x="686" y="641" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="686" y="641" width="0" height="10" rx="5" fill="url(#barAqua)"><animate attributeName="width" from="0" to="165" dur="1.5s" begin="0.85s" fill="freeze"/></rect>
+      <circle cy="646" cx="686" r="5" fill="#A5F3EF" filter="url(#sGlow)"><animate attributeName="cx" from="686" to="851" dur="1.5s" begin="0.85s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.7s" repeatCount="indefinite"/></circle>
+      <text x="1154" y="650" text-anchor="end" fill="#93D8D4" font-size="12" font-weight="700">Em uso</text>
+    </g>
+    <!-- LaTeX -->
+    <g>
+      <rect x="658" y="674" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="658" y="674" width="5" height="90" rx="2.5" fill="#54D6D0"/>
+      <text x="686" y="706" fill="#F8FAFC" font-size="19" font-weight="700">LaTeX</text>
+      <text x="686" y="730" fill="#AAB6CC" font-size="13">Documentação científica e textos técnicos</text>
+      <rect x="686" y="744" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="686" y="744" width="0" height="10" rx="5" fill="url(#barAqua)"><animate attributeName="width" from="0" to="158" dur="1.5s" begin="1s" fill="freeze"/></rect>
+      <circle cy="749" cx="686" r="5" fill="#A5F3EF" filter="url(#sGlow)"><animate attributeName="cx" from="686" to="844" dur="1.5s" begin="1s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="2.9s" repeatCount="indefinite"/></circle>
+      <text x="1154" y="753" text-anchor="end" fill="#93D8D4" font-size="12" font-weight="700">Em uso</text>
+    </g>
+    <!-- AWS -->
+    <g>
+      <rect x="658" y="777" width="520" height="90" rx="12" fill="#0B1224" stroke="#34425F"/>
+      <rect x="658" y="777" width="5" height="90" rx="2.5" fill="#54D6D0"/>
+      <text x="686" y="809" fill="#F8FAFC" font-size="19" font-weight="700">AWS</text>
+      <text x="686" y="833" fill="#AAB6CC" font-size="13">Início dos estudos em cloud computing</text>
+      <rect x="686" y="847" width="330" height="10" rx="5" fill="#242D43"/>
+      <rect x="686" y="847" width="0" height="10" rx="5" fill="url(#barAqua)"><animate attributeName="width" from="0" to="59" dur="1.5s" begin="1.15s" fill="freeze"/></rect>
+      <circle cy="852" cx="686" r="5" fill="#A5F3EF" filter="url(#sGlow)"><animate attributeName="cx" from="686" to="745" dur="1.5s" begin="1.15s" fill="freeze"/><animate attributeName="opacity" values="0.6;1;0.6" dur="3.1s" repeatCount="indefinite"/></circle>
+      <text x="1154" y="856" text-anchor="end" fill="#93D8D4" font-size="12" font-weight="700">Início</text>
+    </g>
+  </g>
+
+  <!-- sweeping sheen across the whole panel -->
+  <rect x="-260" y="50" width="200" height="862" fill="url(#sheen)" transform="skewX(-18)">
+    <animate attributeName="x" values="-260;1360" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>

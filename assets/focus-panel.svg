@@ -1,0 +1,82 @@
+<svg width="1280" height="280" viewBox="0 0 1280 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fTitle fDesc">
+  <title id="fTitle">Em foco no momento</title>
+  <desc id="fDesc">Painel com as tecnologias e áreas atualmente em estudo: Python, SQL, C++, AWS e desenvolvimento de projetos.</desc>
+  <defs>
+    <linearGradient id="fBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#070C18"/><stop offset="0.55" stop-color="#10162A"/><stop offset="1" stop-color="#090F1E"/>
+    </linearGradient>
+    <linearGradient id="fPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#141D33"/><stop offset="1" stop-color="#0B1123"/>
+    </linearGradient>
+    <linearGradient id="fBorder" x1="0" y1="0" x2="1280" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6DB8B"/><stop offset="0.4" stop-color="#8B5CF6"/><stop offset="0.75" stop-color="#38BDF8"/><stop offset="1" stop-color="#2DD4BF"/>
+      <animate attributeName="x1" values="0;400;0" dur="13s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="fTile" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#8B5CF6"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <filter id="fGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="fGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#6B7AA0" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="280" rx="24" fill="url(#fBg)"/>
+  <rect x="18" y="18" width="1244" height="244" rx="20" fill="url(#fGrid)" stroke="url(#fBorder)" stroke-width="2"/>
+  <rect x="31" y="31" width="1218" height="218" rx="16" fill="none" stroke="#6A7897" stroke-opacity="0.45"/>
+  <rect x="52" y="46" width="1176" height="188" rx="14" fill="url(#fPanel)" stroke="#E0BD67" stroke-width="1.3"/>
+
+  <g font-family="Segoe UI, Inter, Arial, sans-serif">
+    <text x="88" y="86" fill="#F4C95D" font-size="12" font-weight="700" letter-spacing="3">EM FOCO NO MOMENTO</text>
+    <text x="88" y="116" fill="#F8FAFC" font-size="24" font-weight="700">Aprendizado e desenvolvimento em andamento</text>
+    <path d="M88 138H1192" stroke="#3A465F"/>
+    <path d="M88 138H300" stroke="#54D6D0" stroke-width="2"/>
+    <circle cx="88" cy="138" r="4" fill="#54D6D0" filter="url(#fGlow)"/>
+
+    <!-- tiles -->
+    <!-- x positions: 82,312,542,772,1002 ; width 196 ; gap 34 -->
+    <g>
+      <rect x="82" y="160" width="196" height="60" rx="10" fill="#0B1224" stroke="#34425F"/>
+      <rect x="82" y="160" width="196" height="3" rx="1.5" fill="url(#fTile)"/>
+      <circle cx="112" cy="190" r="12" fill="#0F1A30" stroke="#54D6D0"/><circle cx="112" cy="190" r="3" fill="#54D6D0"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+      <text x="136" y="186" fill="#F8FAFC" font-size="15" font-weight="700">Python</text>
+      <text x="136" y="205" fill="#9EABC4" font-size="11">análise e programação</text>
+    </g>
+    <g>
+      <rect x="312" y="160" width="196" height="60" rx="10" fill="#0B1224" stroke="#34425F"/>
+      <rect x="312" y="160" width="196" height="3" rx="1.5" fill="url(#fTile)"/>
+      <circle cx="342" cy="190" r="12" fill="#0F1A30" stroke="#54D6D0"/><circle cx="342" cy="190" r="3" fill="#54D6D0"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/></circle>
+      <text x="366" y="186" fill="#F8FAFC" font-size="15" font-weight="700">SQL</text>
+      <text x="366" y="205" fill="#9EABC4" font-size="11">bancos de dados</text>
+    </g>
+    <g>
+      <rect x="542" y="160" width="196" height="60" rx="10" fill="#0B1224" stroke="#34425F"/>
+      <rect x="542" y="160" width="196" height="3" rx="1.5" fill="url(#fTile)"/>
+      <circle cx="572" cy="190" r="12" fill="#0F1A30" stroke="#54D6D0"/><circle cx="572" cy="190" r="3" fill="#54D6D0"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+      <text x="596" y="186" fill="#F8FAFC" font-size="15" font-weight="700">C++</text>
+      <text x="596" y="205" fill="#9EABC4" font-size="11">fundamentos de código</text>
+    </g>
+    <g>
+      <rect x="772" y="160" width="196" height="60" rx="10" fill="#0B1224" stroke="#34425F"/>
+      <rect x="772" y="160" width="196" height="3" rx="1.5" fill="url(#fTile)"/>
+      <circle cx="802" cy="190" r="12" fill="#0F1A30" stroke="#54D6D0"/><circle cx="802" cy="190" r="3" fill="#54D6D0"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></circle>
+      <text x="826" y="186" fill="#F8FAFC" font-size="15" font-weight="700">AWS</text>
+      <text x="826" y="205" fill="#9EABC4" font-size="11">cloud computing</text>
+    </g>
+    <g>
+      <rect x="1002" y="160" width="196" height="60" rx="10" fill="#0B1224" stroke="#34425F"/>
+      <rect x="1002" y="160" width="196" height="3" rx="1.5" fill="url(#fTile)"/>
+      <circle cx="1032" cy="190" r="12" fill="#0F1A30" stroke="#54D6D0"/><circle cx="1032" cy="190" r="3" fill="#54D6D0"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/></circle>
+      <text x="1056" y="186" fill="#F8FAFC" font-size="15" font-weight="700">Projetos</text>
+      <text x="1056" y="205" fill="#9EABC4" font-size="11">análise e automação</text>
+    </g>
+  </g>
+
+  <!-- drifting particles -->
+  <g fill="#93C5FD">
+    <circle cx="1150" cy="90" r="1.4" opacity="0.6"><animate attributeName="cy" values="90;78;90" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="130" r="1.2" opacity="0.5"><animate attributeName="cx" values="120;134;120" dur="6s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

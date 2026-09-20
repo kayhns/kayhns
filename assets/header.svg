@@ -1,0 +1,143 @@
+<svg width="1280" height="400" viewBox="0 0 1280 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hTitle hDesc">
+  <title id="hTitle">Kayky Silva — Estatística, Dados, Programação e Economia</title>
+  <desc id="hDesc">Cabeçalho com identidade visual inspirada em uma interface premium, apresentando o nome, as áreas de atuação e a formação.</desc>
+  <defs>
+    <linearGradient id="hBg" x1="0" y1="0" x2="1280" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05060F"/>
+      <stop offset="0.5" stop-color="#100D24"/>
+      <stop offset="1" stop-color="#061722"/>
+    </linearGradient>
+    <linearGradient id="hBorder" x1="40" y1="30" x2="1240" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6DB8B"/>
+      <stop offset="0.35" stop-color="#8B5CF6"/>
+      <stop offset="0.7" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+      <animate attributeName="x1" values="40;300;40" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="hPanel" x1="180" y1="90" x2="1100" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111A33"/>
+      <stop offset="1" stop-color="#0A1122"/>
+    </linearGradient>
+    <linearGradient id="hAccent" x1="300" y1="90" x2="980" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <radialGradient id="hCore" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#6E7CA6" stroke-width="0.55" opacity="0.14"/>
+    </pattern>
+    <filter id="hGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hSoft" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="26" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="400" rx="28" fill="url(#hBg)"/>
+  <rect x="30" y="30" width="1220" height="340" rx="22" fill="url(#hGrid)"/>
+
+  <!-- ambient light orbs -->
+  <circle cx="215" cy="120" r="90" fill="#8B5CF6" opacity="0.10" filter="url(#hSoft)">
+    <animate attributeName="r" values="82;104;82" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1065" cy="285" r="94" fill="#2DD4BF" opacity="0.09" filter="url(#hSoft)">
+    <animate attributeName="r" values="86;108;86" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- outer frame -->
+  <rect x="16" y="16" width="1248" height="368" rx="24" fill="none" stroke="url(#hBorder)" stroke-width="1.8"/>
+  <rect x="28" y="28" width="1224" height="344" rx="22" fill="none" stroke="#334155" stroke-width="1" opacity="0.6"/>
+
+  <!-- ornamented corners -->
+  <g stroke="#F6DB8B" stroke-width="2" fill="none">
+    <path d="M48 96V48H96"/><path d="M1232 96V48H1184"/>
+    <path d="M48 304V352H96"/><path d="M1232 304V352H1184"/>
+  </g>
+  <g fill="#F6DB8B" filter="url(#hGlow)">
+    <circle cx="48" cy="48" r="3"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1232" cy="48" r="3"><animate attributeName="opacity" values="1;0.5;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="48" cy="352" r="3"><animate attributeName="opacity" values="1;0.5;1" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1232" cy="352" r="3"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- central presentation panel -->
+  <rect x="170" y="76" width="940" height="248" rx="18" fill="url(#hPanel)" stroke="#F6DB8B" stroke-width="1.2"/>
+  <rect x="182" y="88" width="916" height="224" rx="14" fill="none" stroke="url(#hAccent)" stroke-width="0.9" opacity="0.5"/>
+
+  <!-- slow-drifting energy line -->
+  <path d="M120 300 C240 268, 320 326, 430 294 S610 244, 716 268 S908 328, 1018 280 S1130 236, 1168 252"
+        stroke="url(#hAccent)" stroke-width="1.6" opacity="0.22" fill="none" stroke-dasharray="8 12">
+    <animate attributeName="stroke-dashoffset" values="0;-220" dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- central emblem -->
+  <g transform="translate(640 128)">
+    <circle r="40" fill="url(#hCore)" opacity="0.35">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="34" fill="#08101F" stroke="#F6DB8B" stroke-width="1.4"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+      <circle r="28" fill="none" stroke="url(#hAccent)" stroke-width="1.2" opacity="0.85" stroke-dasharray="4 8"/>
+      <circle cx="28" cy="0" r="1.8" fill="#2DD4BF"/>
+      <circle cx="-28" cy="0" r="1.8" fill="#8B5CF6"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
+      <circle r="20" fill="none" stroke="#94A3B8" stroke-width="0.7" opacity="0.5" stroke-dasharray="2 6"/>
+    </g>
+    <polygon points="0,-15 13,0 0,15 -13,0" fill="#38BDF8" filter="url(#hGlow)">
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="2.8s" repeatCount="indefinite"/>
+    </polygon>
+    <circle r="4.5" fill="#E0F2FE"/>
+  </g>
+
+  <text x="640" y="204" text-anchor="middle" fill="#F8FAFC"
+        font-family="Segoe UI, Inter, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="1.4">KAYKY SILVA</text>
+
+  <text x="640" y="242" text-anchor="middle" fill="#C4B5FD"
+        font-family="Segoe UI, Inter, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2.4">ESTATÍSTICA • DADOS • PROGRAMAÇÃO • ECONOMIA</text>
+
+  <g>
+    <path d="M400 262H620" stroke="url(#hAccent)" stroke-width="1.4"/>
+    <path d="M660 262H880" stroke="url(#hAccent)" stroke-width="1.4"/>
+    <polygon points="640,255 648,262 640,269 632,262" fill="#F6DB8B" filter="url(#hGlow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <text x="640" y="292" text-anchor="middle" fill="#94A3B8"
+        font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15.5">Bacharelado em Estatística e Ciência de Dados • Universidade Federal de Ouro Preto</text>
+
+  <!-- floating particles -->
+  <g fill="#E9D5FF">
+    <circle cx="132" cy="140" r="1.6" opacity="0.7">
+      <animate attributeName="cy" values="140;122;140" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="4.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1146" cy="120" r="1.6" opacity="0.6">
+      <animate attributeName="cy" values="120;104;120" dur="5.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.25;0.8" dur="5.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1024" cy="300" r="1.4" opacity="0.6">
+      <animate attributeName="cx" values="1024;1040;1024" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="214" cy="312" r="1.4" opacity="0.55">
+      <animate attributeName="cx" values="214;230;214" dur="5.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="96" cy="220" r="1.2" opacity="0.5">
+      <animate attributeName="cy" values="220;206;220" dur="6.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1188" cy="240" r="1.2" opacity="0.5">
+      <animate attributeName="cy" values="240;226;240" dur="6.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

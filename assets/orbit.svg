@@ -1,0 +1,102 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="oTitle oDesc">
+  <title id="oTitle">Áreas de atuação</title>
+  <desc id="oDesc">Diagrama orbital conectando Estatística, dados, programação e Economia em torno de um núcleo analítico.</desc>
+  <defs>
+    <linearGradient id="oBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#070C18"/><stop offset="0.55" stop-color="#10162A"/><stop offset="1" stop-color="#090F1E"/>
+    </linearGradient>
+    <linearGradient id="oPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#141D33"/><stop offset="1" stop-color="#0B1123"/>
+    </linearGradient>
+    <linearGradient id="oBorder" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6DB8B"/><stop offset="0.4" stop-color="#8B5CF6"/><stop offset="0.75" stop-color="#38BDF8"/><stop offset="1" stop-color="#2DD4BF"/>
+      <animate attributeName="x1" values="0;400;0" dur="13s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="oSpoke" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#8B5CF6"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <radialGradient id="oCore" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#E0F2FE"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="oGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="oGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#6B7AA0" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#oBg)"/>
+  <rect x="18" y="18" width="1244" height="324" rx="20" fill="url(#oGrid)" stroke="url(#oBorder)" stroke-width="2"/>
+  <rect x="31" y="31" width="1218" height="298" rx="16" fill="none" stroke="#6A7897" stroke-opacity="0.45"/>
+  <rect x="52" y="46" width="1176" height="268" rx="14" fill="url(#oPanel)" stroke="#E0BD67" stroke-width="1.3"/>
+
+  <!-- left text block -->
+  <g font-family="Segoe UI, Inter, Arial, sans-serif">
+    <text x="88" y="96" fill="#F4C95D" font-size="12" font-weight="700" letter-spacing="3">ÁREAS DE ATUAÇÃO</text>
+    <text x="88" y="140" fill="#F8FAFC" font-size="27" font-weight="700">Onde a Estatística</text>
+    <text x="88" y="174" fill="#F8FAFC" font-size="27" font-weight="700">encontra os dados</text>
+    <path d="M88 196H300" stroke="#54D6D0" stroke-width="2"/>
+    <circle cx="88" cy="196" r="4" fill="#54D6D0" filter="url(#oGlow)"/>
+    <text x="88" y="228" fill="#9EABC4" font-size="14">Conecto Estatística, análise de dados,</text>
+    <text x="88" y="250" fill="#9EABC4" font-size="14">programação e BI para transformar</text>
+    <text x="88" y="272" fill="#9EABC4" font-size="14">dados em interpretação e decisão.</text>
+  </g>
+
+  <!-- orbital diagram -->
+  <g transform="translate(958 180)" font-family="Segoe UI, Inter, Arial, sans-serif">
+    <!-- outer rotating ring -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="26s" repeatCount="indefinite"/>
+      <circle r="104" fill="none" stroke="#3A465F" stroke-width="1" stroke-dasharray="3 9"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="34s" repeatCount="indefinite"/>
+      <circle r="104" fill="none" stroke="url(#oSpoke)" stroke-width="1" opacity="0.4" stroke-dasharray="55 330"/>
+    </g>
+
+    <!-- spokes -->
+    <g stroke="url(#oSpoke)" stroke-width="1.4" opacity="0.5">
+      <line x1="0" y1="0" x2="0" y2="-68"/>
+      <line x1="0" y1="0" x2="68" y2="0"/>
+      <line x1="0" y1="0" x2="0" y2="68"/>
+      <line x1="0" y1="0" x2="-68" y2="0"/>
+    </g>
+
+    <!-- travelling pulse around orbit -->
+    <circle r="3" fill="#E0F2FE" filter="url(#oGlow)">
+      <animateMotion dur="8s" repeatCount="indefinite" path="M0 -88 A88 88 0 1 1 0 88 A88 88 0 1 1 0 -88"/>
+    </circle>
+
+    <!-- nodes -->
+    <g>
+      <circle cx="0" cy="-88" r="19" fill="#0F1A30" stroke="#F6DB8B" stroke-width="1.4"/>
+      <circle cx="0" cy="-88" r="4" fill="#F6DB8B"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+      <text x="0" y="-116" text-anchor="middle" fill="#F8FAFC" font-size="12" font-weight="700">Estatística</text>
+    </g>
+    <g>
+      <circle cx="88" cy="0" r="19" fill="#0F1A30" stroke="#38BDF8" stroke-width="1.4"/>
+      <circle cx="88" cy="0" r="4" fill="#38BDF8"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/></circle>
+      <text x="88" y="32" text-anchor="middle" fill="#F8FAFC" font-size="12" font-weight="700">Dados</text>
+    </g>
+    <g>
+      <circle cx="0" cy="88" r="19" fill="#0F1A30" stroke="#2DD4BF" stroke-width="1.4"/>
+      <circle cx="0" cy="88" r="4" fill="#2DD4BF"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+      <text x="0" y="116" text-anchor="middle" fill="#F8FAFC" font-size="12" font-weight="700">Programação</text>
+    </g>
+    <g>
+      <circle cx="-88" cy="0" r="19" fill="#0F1A30" stroke="#8B5CF6" stroke-width="1.4"/>
+      <circle cx="-88" cy="0" r="4" fill="#8B5CF6"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></circle>
+      <text x="-88" y="32" text-anchor="middle" fill="#F8FAFC" font-size="12" font-weight="700">Análises</text>
+    </g>
+
+    <!-- core -->
+    <circle r="34" fill="url(#oCore)" opacity="0.4"><animate attributeName="opacity" values="0.25;0.55;0.25" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle r="26" fill="#08101F" stroke="#F6DB8B" stroke-width="1.4"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+      <polygon points="0,-12 10,0 0,12 -10,0" fill="none" stroke="url(#oSpoke)" stroke-width="1.4"/>
+    </g>
+    <circle r="4" fill="#E0F2FE"/>
+  </g>
+</svg>
